@@ -1,0 +1,163 @@
+<html lang="en">      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iced Coffee Menu</title>
+  <link rel="shortcut icon" href="12.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("bg.png");
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: whitesmoke;
+      margin-bottom: 20px;
+      background-color: #333;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 15px; 
+      justify-items: center;
+      margin-top: 100px;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .item {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+      width: 220px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+      margin-top: 10%;
+    }
+
+    .item:hover {
+      transform: translateY(-5px);
+    }
+
+    .item img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .item h3 {
+      margin: 8px 0;
+      font-size: 18px;
+      color: #d3545f;
+    }
+
+    .order-btn {
+      margin-top: 8px;
+      padding: 7px 14px;
+      background: #d3545f;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .order-btn:hover {
+      background: #b93e4a;
+    }
+
+    .back-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 50px;
+      background: #333;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background: #555;
+    }
+
+    @media (max-width: 900px) {
+      .menu {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        grid-template-columns: 1fr;
+      }
+
+      .item {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Iced Coffee Menu</h1>
+  
+  <div class="menu">
+    <div class="item">
+      <img src="ic1.jpg" alt="Vanilla">
+      <h3>Vanilla</h3>
+      <p class="price">16oz = <span>₱49</span></p>
+      <p class="price">22oz = <span>₱69</span></p>
+      <button class="order-btn">Order Now</button>
+    </div>
+
+    <div class="item">
+      <img src="ic2.jpg" alt="Salted Caramel">
+      <h3>Salted Caramel</h3>
+      <p class="price">16oz = <span>₱49</span></p>
+      <p class="price">22oz = <span>₱69</span></p>
+      <button class="order-btn">Order Now</button>
+    </div>
+
+    <div class="item">
+      <img src="ic3.jpg" alt="Chocolate">
+      <h3>Chocolate</h3>
+      <p class="price">16oz = <span>₱49</span></p>
+      <p class="price">22oz = <span>₱69</span></p>
+      <button class="order-btn">Order Now</button>
+    </div>
+  </div> 
+
+  <div class="back-section">
+    <a class="back-btn" onclick="history.back()" href="#section3"> Back</a>
+  </div>
+</body>
+</html>
